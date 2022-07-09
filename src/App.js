@@ -1,3 +1,6 @@
+import CompanyIcon from './assets/companyicon.svg';
+import PaginationIcon from './assets/paginationicon.svg';
+
 function App() {
   return (
     <div className="flex h-screen">
@@ -27,7 +30,15 @@ function App() {
           </div>
         </form>
       </div>
-      <div className="flex-1 flex-auto w-7/12 bg-white"></div>
+      <div className="flex-1 flex flex-auto w-7/12 bg-white items-center justify-center flex-col">
+        <p className="text-blue-600">Organize your customer information</p>
+        <div className="flex flex-col">
+          <img className="w-80 mt-12" src={CompanyIcon} alt="companyicon"/>
+        </div>
+        <div className="flex flex-col mt-12">
+          <img  className="" src={PaginationIcon} alt="paginationicon"/>
+        </div>
+      </div>
     </div>
   );
 }
